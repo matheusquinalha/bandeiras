@@ -1,36 +1,60 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Russia</title>
+    <title>Chile</title>
     <style>
         * {
             margin: 0 auto;
         }
+
         body {
-            height: 1080px;
+            height: 480px;
+            width: 800px;
         }
-        .preto {
-            background-color: white;
-            height: 33.33%;
-        }
-        .vermelho {
+
+        .azul {
             background-color: blue;
-            height: 33.33%;
+            height: 50%;
+            width: 33.33%;
+            position: relative;
+            float: left;
         }
-        .amarelo {
+
+        .branco {
+            background-color: white;
+            height: 50%;
+            width: 66.66%;
+            float: right;
+
+        }
+
+        .vermelho {
             background-color: red;
+            height: 50%;
+            clear: right;
+        }
+
+        img {
+            position: absolute;
             height: 33.33%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
 
 <body>
-    <section class="preto"></section>
+
+    <section class="azul">
+        <img src="imagens/star.png" alt="Estrela do Chile">
+    </section>
+    <section class="branco"></section>
     <section class="vermelho"></section>
-    <section class="amarelo"></section>
 </body>
+
 </html>
